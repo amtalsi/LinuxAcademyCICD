@@ -4,6 +4,7 @@ pipeline {
 		stage('Buil the project using Gradle') {
 			steps {
 				sh './gradlew build --no-daemon'
+				sh 'pwd && ls -larth'
 			}
 		}
 	}
