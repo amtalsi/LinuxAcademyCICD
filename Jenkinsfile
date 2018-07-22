@@ -3,7 +3,7 @@ pipeline {
 	stages {
 		stage('Buil the project using Gradle') {
 			steps {
-				sh './gradelw build'
+				sh './gradlew build --no-daemon'
 			}
 		}
 	}
