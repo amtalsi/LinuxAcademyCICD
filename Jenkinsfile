@@ -1,7 +1,7 @@
 pipeline {
 	agent any;
 	stages {
-		stage('Buil the project using Gradle') {
+		stage('building') {
 			steps {
 				sh './gradlew build --no-daemon'
 				sh 'pwd && ls -larth'
